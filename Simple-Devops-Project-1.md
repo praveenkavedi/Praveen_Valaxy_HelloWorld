@@ -28,3 +28,19 @@
           * update the user in tomcat-user.xml file and add the users
           * Change the default Port number running from 8080 to 8090
           * Start the tomcat
+# CI/CD Steps,
+   Create a Job in Jenkins\
+   Give our Git Repo Url\
+   #### Add Source code image here
+   Modify Build as per below image,
+   ### Add Build Image here 
+   Save and Apply Changes\
+   CI is completed here
+   
+   Once CI is done proceed with CD
+   - Install "Deploy to container" plugin to deploy the war file in some container in our case it is TOMCAT. 
+   - Add the Credentials, Give the Tomcat credentails which we updated in tomcat-user.xml file
+   - Add the Post build step as per the below image, 
+      ### Add Post_Build image here
+   - Add the Build Triggers to Trigger the job every two minutes as per the below image.
+      ### Add Build_Trigger image here
