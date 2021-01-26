@@ -1,6 +1,8 @@
 # Summary
   Once the user update/Modify the code in Github, it will tigger the Jenkins job. Jenkins will start the build the war/Jar file and test the code to achieve Continous Integration.  Next for Continous Deployment, the War/Jar file has been deployed in Tomcat server which is running in AWS Instance. 
-
+ 
+ <img src="images/simpleDevopsNew.JPG" width="500">
+ 
 # Tools Used
 
 - Git for Version Control
@@ -30,10 +32,14 @@
           * Start the tomcat
 # CI/CD Steps,
    Create a Job in Jenkins\
-   Give our Git Repo Url\
-   #### Add Source code image here
+   Give our Git Repo Url
+   
+   <img src="images/SourceCodeNew.JPG" width="500">
+   
    Modify Build as per below image,
-   ### Add Build Image here 
+   
+   <img src="images/BuildNew.JPG" width="500">
+   
    Save and Apply Changes\
    CI is completed here
    
@@ -41,6 +47,8 @@
    - Install "Deploy to container" plugin to deploy the war file in some container in our case it is TOMCAT. 
    - Add the Credentials, Give the Tomcat credentails which we updated in tomcat-user.xml file
    - Add the Post build step as per the below image, 
-      ### Add Post_Build image here
+     
+   <img src="images/PostBuildNew.JPG" width="500">
+     
    - Add the Build Triggers to Trigger the job every two minutes as per the below image.
-      ### Add Build_Trigger image here
+   <img src="images/BuildTriggerNew.JPG" width="500">
