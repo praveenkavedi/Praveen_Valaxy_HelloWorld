@@ -1,3 +1,3 @@
-<h1> Hello, Welcome to Valaxy Technologies !!! </h1>
-<h2> Fifth Test </h2>
-<h3> One last test </h3>
+<h1> Hello, Welcome to my Devops_Simple_Project </h1>
+<h2> This is Praveen </h2>
+<h3> Readme, will walkthorugh the steps used to deploy this project </h3>
